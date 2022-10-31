@@ -5,7 +5,7 @@ import './CourseGoalItem.css';
 const CourseGoalItem = props => { 
   // const [deleteText, setDeleteText] = useState('');
 
-  const deleteHandler = () => {
+  const deleteHandler = () => { 
     // setDeleteText('(Deleted!)'); 
     props.onDelete(props.id);
   };
