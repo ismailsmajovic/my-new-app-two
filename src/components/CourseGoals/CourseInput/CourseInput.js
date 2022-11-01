@@ -30,7 +30,7 @@ const FormControl = styled.div `
   outline: none;
   background: #fad0ec;
   border-color: #8b005d;
-}
+} 
 
 
 
@@ -50,12 +50,12 @@ const CourseInput = props => {
   const formSubmitHandler = event => {
     
     event.preventDefault();
-
+ 
       if (enteredValue.trim().length === 0) {
         setIsValed(false)
         return 
       }
-    props.onAddGoal(enteredValue);
+    props.onAddGoal(enteredValue); 
   };
 
   return (
@@ -67,7 +67,7 @@ const CourseInput = props => {
       </div>
       <Button type="submit">Add Goal</Button>
     </form>
-  );
+  ); 
 };
 
 export default CourseInput;
